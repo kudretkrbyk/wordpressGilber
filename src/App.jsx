@@ -4,11 +4,12 @@ import About from "./Pages/About";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
 import Partners from "./Pages/Partners";
+import Blog from "./Pages/Blog";
 
 function App() {
   return (
     <>
-      <div className="relative">
+      <div className="relative flex flex-col gap-10">
         <div>
           <Navbar></Navbar>
         </div>
@@ -27,6 +28,9 @@ function App() {
         </div>
         <div>
           <Partners></Partners>{" "}
+        </div>
+        <div>
+          <Blog></Blog>
         </div>
       </div>
     </>

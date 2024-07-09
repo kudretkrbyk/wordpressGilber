@@ -7,7 +7,7 @@ export default function Home() {
         <div className="bg-cover bg-center w-full h-screen bg-[url(http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/home.jpg)]   "></div>{" "}
       </div>
 
-      <div className="z-50 flex flex-col text-white w-6/12 h-screen bg-red-500 items-start justify-center border border-white p-48 gap-10">
+      <div className="z-50 flex flex-col text-white w-6/12 h-screen  items-start justify-center border border-white p-48 gap-10">
         <div className="z-50 relative flex items-center justify-center w-1/4 h-16 group ">
           <div className=" absolute border p-10 rounded-full group-hover:scale-125 duration-500"></div>
           <div className="absolute">

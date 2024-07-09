@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Partners() {
   return (
     <div className="w-full h-screen flex items-center justify-center  relative ">
@@ -13,7 +11,7 @@ export default function Partners() {
             {" "}
             <img src="http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/logo-01.png"></img>
           </div>
-          <div className="p-10 opacity-50">
+          <div className="z-50 p-10 opacity-50">
             {" "}
             <img src="http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/logo-02.png"></img>
           </div>
