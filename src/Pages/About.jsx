@@ -1,10 +1,58 @@
-import React from "react";
-
 export default function About() {
   return (
-    <div className="flex items-center justify-center gap-10 w-full h-screen bg-black">
-      <div className="border border-white"></div>
-      <div className="border border-white"></div>
+    <div className="flex items-center justify-around px-40 w-full h-screen bg-black ">
+      <div className="flex flex-col items-center gap-4 justify-center border-l border-b border-t border-white w-3/12 h-4/6">
+        <div className="flex z-50 items-end justify-center text-white w-full">
+          <div className=" text-9xl ">9</div>
+          <div className="text-8xl text-red-500">.</div>
+        </div>
+        <div className="flex w-full items-end justify-center gap-5 text-white p-10">
+          <div className="w-full h-[1px] bg-white"></div>
+          <div className="w-full text-wrap text-2xl text-right">
+            Years Experience Working
+          </div>
+        </div>
+      </div>
+      <div className=" flex flex-col items-start justify-center gap-10 p-5  w-5/12  h-4/6">
+        <div className="text-white text-2xl font-bold">Great Experience</div>
+        <div className="text-white text-2xl">
+          Fill appear won’t may make moveth signs. Fourth. Good own. Green
+          you’re moveth us, lesser.
+        </div>
+        <div className="flex flex-col gap-16 w-full">
+          {" "}
+          <div className="w-full  text-white flex flex-col gap-3">
+            <div className="flex items-center justify-between">
+              <div>WEB DESIGN</div>
+              <div>70%</div>
+            </div>
+            <div className="w-full relative ">
+              <div className="absolute z-50 w-8/12 h-2 bg-red-500 rounded-full"></div>
+              <div className=" absolute w-full h-2 bg-white rounded-full"></div>
+            </div>
+          </div>
+          <div className="w-full text-white flex flex-col gap-3">
+            <div className="flex items-center justify-between">
+              <div>FIGMA</div>
+              <div>85%</div>
+            </div>
+            <div className="w-full relative ">
+              <div className="absolute z-50 w-10/12 h-2 bg-red-500 rounded-full"></div>
+              <div className=" absolute w-full h-2 bg-white rounded-full"></div>
+            </div>
+          </div>
+          <div className="w-full text-white flex flex-col gap-3">
+            <div className="flex items-center justify-between">
+              <div>WORDPRESS</div>
+              <div>90%</div>
+            </div>
+            <div className="w-full relative ">
+              <div className="absolute z-50 w-11/12 h-2 bg-red-500 rounded-full"></div>
+              <div className=" absolute w-full h-2 bg-white rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
