@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Navbar() {
   return (
     <div className="flex w-full items-center justify-between p-4 text-white  bg-blue-200">
