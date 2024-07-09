@@ -1,3 +1,4 @@
+import LeftNav from "./Components/LeftNav";
 import Navbar from "./Components/Navbar";
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
     <>
       <div>
         <Navbar></Navbar>
+        <LeftNav></LeftNav>
       </div>
     </>
   );
