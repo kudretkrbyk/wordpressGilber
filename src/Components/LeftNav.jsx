@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function LeftNav() {
   return (
-    <div className="flex flex-col items-start justify-center fixed top-20 p gap-4 w-full border border-black">
+    <div className="z-50 flex flex-col items-start justify-center fixed top-20 p gap-4 w-full">
       <div className="flex flex-col items-center gap-8  border border-black w-36">
         {" "}
         <div className="bg-gray-500 w-[1px] h-48"></div>
