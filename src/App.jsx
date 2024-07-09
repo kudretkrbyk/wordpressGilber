@@ -2,6 +2,8 @@ import LeftNav from "./Components/LeftNav";
 import Navbar from "./Components/Navbar";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
+import Projects from "./Pages/Projects";
+import Partners from "./Pages/Partners";
 
 function App() {
   return (
@@ -19,6 +21,12 @@ function App() {
         </div>
         <div>
           <About></About>
+        </div>
+        <div>
+          <Projects></Projects>
+        </div>
+        <div>
+          <Partners></Partners>{" "}
         </div>
       </div>
     </>
