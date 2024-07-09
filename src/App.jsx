@@ -1,5 +1,6 @@
 import LeftNav from "./Components/LeftNav";
 import Navbar from "./Components/Navbar";
+import About from "./Pages/About";
 import Home from "./Pages/Home";
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
         </div>
         <div>
           <Home></Home>
+        </div>
+        <div>
+          <About></About>
         </div>
       </div>
     </>

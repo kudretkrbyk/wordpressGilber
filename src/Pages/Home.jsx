@@ -1,12 +1,10 @@
-import React from "react";
 import { FaPlay } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div className="w-full h-screen relative  ">
       <div className="z-0 absolute top-0 left-0 w-full">
-        {" "}
-        <img src="http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/home.jpg"></img>{" "}
+        <div className="bg-cover bg-center w-full h-screen bg-[url(http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/home.jpg)]   "></div>{" "}
       </div>
 
       <div className="z-50 flex flex-col text-white w-6/12 h-screen bg-red-500 items-start justify-center border border-white p-48 gap-10">
