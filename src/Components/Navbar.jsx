@@ -1,11 +1,11 @@
 export default function Navbar() {
   return (
-    <div className="flex w-full items-center justify-between p-4 text-white absolute z-50">
+    <div className="flex w-full items-center justify-between p-10 text-white absolute z-50">
       <div className="flex items-center justify-center gap-16 w-full ">
         {" "}
         <div className="flex items-end justify-center gap-1">
-          <div className="text-5xl">Gilber</div>
-          <div className="text-5xl text-red-700">.</div>
+          <div className="text-4xl">Gilber</div>
+          <div className="text-4xl text-red-700">.</div>
         </div>
         <div className="flex items-center justify-center gap-10 w-full">
           <div className=" hover:text-red-500 duration-500 hover:cursor-pointer">
