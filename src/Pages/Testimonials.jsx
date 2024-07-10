@@ -1,11 +1,37 @@
 import { MdArrowForwardIos } from "react-icons/md";
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import slides from "../Constant/TestimonialsSlides.jsx";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function Testimonials() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderSlides, setSliderSlides] = useState([]);
+  const [scale, setScale] = useState("scale-125");
+  const imageRef = useRef(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setScale("scale-100");
+          } else {
+            setScale("scale-125");
+          }
+        });
+      },
+      { threshold: 0.5 } // Görüntülenme oranı (0.5 = %50)
+    );
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => {
+      if (imageRef.current) {
+        observer.unobserve(imageRef.current);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     if (slides !== null) {
@@ -27,8 +53,11 @@ export default function Testimonials() {
 
   return (
     <div className="w-full h-screen relative flex items-center justify-center p-20">
-      <div className="absolute bg-center bg-cover w-full h-screen bg-[url('http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/testimonials.jpg')]"></div>
-      <div className="w-full h-full flex items-end justify-between p-20 z-50">
+      <div
+        ref={imageRef}
+        className={`absolute bg-center bg-cover w-full h-screen bg-[url('http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/testimonials.jpg')] duration-[4000ms] ${scale} `}
+      ></div>
+      <div className="w-full h-full flex items-end justify-between gap-32 p-20 z-50">
         <div className="w-1/2 h-full flex flex-col items-start justify-between">
           <svg
             xmlns="http://www.w3.org/2000/svg"
