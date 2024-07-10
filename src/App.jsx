@@ -11,41 +11,27 @@ import Testimonials from "./Pages/Testimonials";
 
 function App() {
   return (
-    <>
-      <div className="relative flex flex-col ">
-        <div>
-          <Navbar></Navbar>
-        </div>
-        <div>
-          {" "}
-          <LeftNav></LeftNav>
-        </div>
-        <div>
-          <Home></Home>
-        </div>
-        <div>
-          <About></About>
-        </div>
-        <div>
-          <Projects></Projects>
-        </div>
-        <div>
-          <Education></Education>
-        </div>
-        <div>
-          <Testimonials></Testimonials>
-        </div>
-        <div>
-          <Partners></Partners>{" "}
-        </div>
-        <div>
-          <Blog></Blog>
-        </div>
-        <div>
-          <Contact></Contact>
-        </div>
-      </div>
-    </>
+    <div className=" overflow-hidden">
+      <Navbar></Navbar>
+
+      <LeftNav></LeftNav>
+
+      <Home></Home>
+
+      <About></About>
+
+      <Projects></Projects>
+
+      <Education></Education>
+
+      <Testimonials></Testimonials>
+
+      <Partners></Partners>
+
+      <Blog></Blog>
+
+      <Contact></Contact>
+    </div>
   );
 }
 
