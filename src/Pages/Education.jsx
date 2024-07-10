@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MdArrowForwardIos } from "react-icons/md";
 import { MdOutlineArrowBackIos } from "react-icons/md";
-import slides from "../Constant/ConstantSlides";
+import slides from "../Constant/EducationSlides.jsx";
 import { useEffect } from "react";
 
 export default function Education() {

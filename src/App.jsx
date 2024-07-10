@@ -7,6 +7,7 @@ import Partners from "./Pages/Partners";
 import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
 import Education from "./Pages/Education";
+import Testimonials from "./Pages/Testimonials";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
         </div>
         <div>
           <Education></Education>
+        </div>
+        <div>
+          <Testimonials></Testimonials>
         </div>
         <div>
           <Partners></Partners>{" "}
