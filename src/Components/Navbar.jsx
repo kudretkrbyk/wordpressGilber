@@ -8,14 +8,28 @@ export default function Navbar() {
           <div className="text-5xl text-red-700">.</div>
         </div>
         <div className="flex items-center justify-center gap-10 w-full">
-          <div className=" hover:text-red-500 duration-500">HOME </div>
-          <div className=" hover:text-red-500 duration-500">ABOUT</div>
-          <div className=" hover:text-red-500 duration-500">PROJECTS</div>
-          <div className=" hover:text-red-500 duration-500">EDUCATION</div>
-          <div className=" hover:text-red-500 duration-500">TESTIMONIALS</div>
-          <div className=" hover:text-red-500 duration-500">PARTNERS</div>
-          <div className=" hover:text-red-500 duration-500">BLOG</div>
-          <div className=" hover:text-red-500 duration-500 bg-red-500">
+          <div className=" hover:text-red-500 duration-500 hover:cursor-pointer">
+            HOME{" "}
+          </div>
+          <div className=" hover:text-red-500 duration-500 hover:cursor-pointer">
+            ABOUT
+          </div>
+          <div className=" hover:text-red-500 duration-500 hover:cursor-pointer">
+            PROJECTS
+          </div>
+          <div className=" hover:text-red-500 duration-500 hover:cursor-pointer">
+            EDUCATION
+          </div>
+          <div className=" hover:text-red-500 duration-500 hover:cursor-pointer">
+            TESTIMONIALS
+          </div>
+          <div className=" hover:text-red-500 duration-500 hover:cursor-pointer">
+            PARTNERS
+          </div>
+          <div className=" hover:text-red-500 duration-500 hover:cursor-pointer">
+            BLOG
+          </div>
+          <div className=" hover:text-red-500 duration-500 bg-red-500 hover:cursor-pointer">
             CONTACT
           </div>
         </div>

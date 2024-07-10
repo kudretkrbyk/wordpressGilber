@@ -6,6 +6,7 @@ import Projects from "./Pages/Projects";
 import Partners from "./Pages/Partners";
 import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
+import Education from "./Pages/Education";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         </div>
         <div>
           <Projects></Projects>
+        </div>
+        <div>
+          <Education></Education>
         </div>
         <div>
           <Partners></Partners>{" "}
