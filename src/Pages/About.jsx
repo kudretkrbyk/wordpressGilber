@@ -1,4 +1,42 @@
+import { useState, useEffect, useRef } from "react";
 export default function About() {
+  const [figmaWidth, setFigmaWidth] = useState(85);
+  const [webDesignWidth, setWebDesignWidth] = useState(70);
+  const [wordpressWidth, setWordpressWidth] = useState(90);
+
+  const [figmaWidthObserver, setFigmaWidthObserver] = useState(0);
+  const [webDesignWidthObserver, setWebDesignWidthObserver] = useState(0);
+  const [wordpressWidthObserver, setWordpressWidthObserver] = useState(0);
+  const skilBarsRef = useRef(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setFigmaWidthObserver(figmaWidth);
+            setWebDesignWidthObserver(webDesignWidth);
+            setWordpressWidthObserver(wordpressWidth);
+          } else {
+            setFigmaWidthObserver(0);
+            setWebDesignWidthObserver(0);
+            setWordpressWidthObserver(0);
+          }
+        });
+      },
+      { threshold: 0.5 } // Görüntülenme oranı (0.5 = %50)
+    );
+
+    if (skilBarsRef.current) {
+      observer.observe(skilBarsRef.current);
+    }
+
+    return () => {
+      if (skilBarsRef.current) {
+        observer.unobserve(skilBarsRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="flex items-center justify-around px-40 w-full h-screen bg-black ">
       <div className="flex flex-col items-center gap-4 justify-center border-l border-b border-t border-white w-3/12 h-4/6">
@@ -21,33 +59,51 @@ export default function About() {
         </div>
         <div className="flex flex-col gap-16 w-full">
           {" "}
-          <div className="w-full  text-white flex flex-col gap-3">
+          <div
+            ref={skilBarsRef}
+            className="w-full  text-white flex flex-col gap-3"
+          >
             <div className="flex items-center justify-between">
               <div>WEB DESIGN</div>
-              <div>70%</div>
+              <div className="web-design"> {webDesignWidth}%</div>
             </div>
             <div className="w-full relative ">
-              <div className="absolute z-50 w-8/12 h-2 bg-red-500 rounded-full"></div>
+              <div
+                className="absolute z-50  h-2 bg-red-500 rounded-full duration-[4000ms]"
+                style={{ width: `${webDesignWidthObserver}%` }}
+              ></div>
               <div className=" absolute w-full h-2 bg-white rounded-full"></div>
             </div>
           </div>
-          <div className="w-full text-white flex flex-col gap-3">
+          <div
+            ref={skilBarsRef}
+            className="w-full text-white flex flex-col gap-3"
+          >
             <div className="flex items-center justify-between">
               <div>FIGMA</div>
-              <div>85%</div>
+              <div className="figma">{figmaWidth}%</div>
             </div>
             <div className="w-full relative ">
-              <div className="absolute z-50 w-10/12 h-2 bg-red-500 rounded-full"></div>
+              <div
+                className="absolute z-50  h-2 bg-red-500 rounded-full duration-[4000ms]"
+                style={{ width: `${figmaWidthObserver}%` }}
+              ></div>
               <div className=" absolute w-full h-2 bg-white rounded-full"></div>
             </div>
           </div>
-          <div className="w-full text-white flex flex-col gap-3">
+          <div
+            ref={skilBarsRef}
+            className="w-full text-white flex flex-col gap-3"
+          >
             <div className="flex items-center justify-between">
               <div>WORDPRESS</div>
-              <div>90%</div>
+              <div className="wordpress"> {wordpressWidth} %</div>
             </div>
             <div className="w-full relative ">
-              <div className="absolute z-50 w-11/12 h-2 bg-red-500 rounded-full"></div>
+              <div
+                className="absolute z-50  h-2 bg-red-500 rounded-full duration-[4000ms]"
+                style={{ width: `${wordpressWidthObserver}%` }}
+              ></div>
               <div className=" absolute w-full h-2 bg-white rounded-full"></div>
             </div>
           </div>
