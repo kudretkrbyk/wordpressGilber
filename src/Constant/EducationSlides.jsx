@@ -2,8 +2,8 @@ const slides = [
   {
     id: 1,
     content: (
-      <div className="flex flex-col items-center justify-center p-20 px-36 z-50 gap-10 w-full text-white ">
-        <div className="flex items-center justify-around gap-10 w-full">
+      <div className="flex flex-col items-center justify-center p-20 px-36 z-50 gap-5 w-full text-white ">
+        <div className="flex items-center justify-around gap-5 w-full">
           <div className="w-full">
             <img src="http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/behance.png"></img>
           </div>
@@ -17,7 +17,7 @@ const slides = [
           </div>
         </div>
         <div className="bg-gray-500 w-full h-[2px]"></div>
-        <div className="flex items-center justify-around gap-10 w-full">
+        <div className="flex items-center justify-around gap-5 w-full">
           <div className="w-full">
             <img src="http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/behance.png"></img>
           </div>
@@ -31,7 +31,7 @@ const slides = [
           </div>
         </div>
         <div className="bg-gray-500 w-full h-[2px]"></div>
-        <div className="flex items-center justify-around gap-10 w-full">
+        <div className="flex items-center justify-around gap-5 w-full">
           <div className="w-full">
             <img src="http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/behance.png"></img>
           </div>
@@ -50,8 +50,8 @@ const slides = [
   {
     id: 2,
     content: (
-      <div className="flex flex-col items-center justify-center p-20 px-36 z-50 gap-10 w-full text-white ">
-        <div className="flex items-center justify-around gap-10 w-full">
+      <div className="flex flex-col items-center justify-center p-20 px-36 z-50 gap-5 w-full text-white ">
+        <div className="flex items-center justify-around gap-5 w-full">
           <div className="w-full">
             <img src="http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/envato.png"></img>
           </div>
@@ -65,7 +65,7 @@ const slides = [
           </div>
         </div>
         <div className="bg-gray-500 w-full h-[2px]"></div>
-        <div className="flex items-center justify-around gap-10 w-full">
+        <div className="flex items-center justify-around gap-5 w-full">
           <div className="w-full">
             <img src="http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/behance.png"></img>
           </div>
@@ -79,7 +79,7 @@ const slides = [
           </div>
         </div>
         <div className="bg-gray-500 w-full h-[2px]"></div>
-        <div className="flex items-center justify-around gap-10 w-full">
+        <div className="flex items-center justify-around gap-5 w-full">
           <div className="w-full">
             <img src="http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/twitter.png"></img>
           </div>
@@ -98,8 +98,8 @@ const slides = [
   {
     id: 3,
     content: (
-      <div className="flex flex-col items-center justify-center p-20 px-36 z-50 gap-10 w-full text-white ">
-        <div className="flex items-center justify-around gap-10 w-full">
+      <div className="flex flex-col items-center justify-center p-20 px-36 z-50 gap-5 w-full text-white ">
+        <div className="flex items-center justify-around gap-5 w-full">
           <div className="w-full">
             <img src="http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/behance.png"></img>
           </div>
@@ -113,7 +113,7 @@ const slides = [
           </div>
         </div>
         <div className="bg-gray-500 w-full h-[2px]"></div>
-        <div className="flex items-center justify-around gap-10 w-full">
+        <div className="flex items-center justify-around gap-5 w-full">
           <div className="w-full">
             <img src="http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/behance.png"></img>
           </div>
@@ -127,7 +127,7 @@ const slides = [
           </div>
         </div>
         <div className="bg-gray-500 w-full h-[2px]"></div>
-        <div className="flex items-center justify-around gap-10 w-full">
+        <div className="flex items-center justify-around gap-5 w-full">
           <div className="w-full">
             <img src="http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/behance.png"></img>
           </div>
