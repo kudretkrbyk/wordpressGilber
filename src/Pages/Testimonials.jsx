@@ -57,7 +57,7 @@ export default function Testimonials() {
         ref={imageRef}
         className={`absolute bg-center bg-cover w-full h-screen bg-[url('http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/testimonials.jpg')] duration-[4000ms] ${scale} `}
       ></div>
-      <div className="w-full h-full flex items-end justify-between gap-32 p-20 z-50">
+      <div className="w-full h-full flex items-end justify-between gap-32 p-20 z-40">
         <div className="w-1/2 h-full flex flex-col items-start justify-between">
           <svg
             xmlns="http://www.w3.org/2000/svg"

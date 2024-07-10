@@ -20,7 +20,7 @@ export default function Projects() {
 
   return (
     <div className="w-full h-screen relative overflow-hidden">
-      <div className="z-50 absolute flex items-center justify-between w-full h-screen p-36">
+      <div className=" absolute flex items-center justify-between w-full h-screen p-36">
         <div className="text-white cursor-pointer" onClick={handlePrev}>
           <MdOutlineArrowBackIos className="size-10" />
         </div>
@@ -41,7 +41,7 @@ export default function Projects() {
             style={{ backgroundImage: slide.backgroundImage }}
           ></div>{" "}
           <div
-            className={`absolute flex flex-col text-white z-50 gap-10 items-start justify-center h-screen p-60 w-2/3 transition-all duration-700 ease-in-out ${
+            className={`absolute flex flex-col text-white gap-10 items-start justify-center h-screen p-60 w-2/3 transition-all duration-700 ease-in-out ${
               index === currentSlide
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"

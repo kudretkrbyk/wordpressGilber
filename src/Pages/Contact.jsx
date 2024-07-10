@@ -2,8 +2,8 @@ export default function Contact() {
   return (
     <div className="w-full h-screen relative">
       <div className="z-30 absolute bg-cover bg-center w-full h-screen bg-[url(http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/contact.jpg)]   "></div>
-      <div className="absolute z-50 flex items-center justify-center gap-20 w-full text-white p-32">
-        <div className="z-50 flex flex-col gap-5 items-start justify-center p-20 w-1/2">
+      <div className="absolute z-40 flex items-center justify-center gap-20 w-full text-white p-32">
+        <div className="z-40 flex flex-col gap-5 items-start justify-center p-20 w-1/2">
           <div className="text-5xl">Contact</div>
           <div className=" text-zinc-400 ">
             You’ll called htmlFor yielding male, so lights Stars abundantly, is

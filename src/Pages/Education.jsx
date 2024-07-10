@@ -28,9 +28,9 @@ export default function Education() {
 
   return (
     <div className="w-full h-screen relative flex items-center justify-center bg-[#161616] overflow-hidden">
-      <div className="z-50 absolute flex items-center justify-between w-full h-screen p-36">
-        <div className="text-white cursor-pointer" onClick={handlePrev}>
-          <MdOutlineArrowBackIos className="size-10" />
+      <div className=" absolute flex items-center justify-between w-full h-screen p-36">
+        <div className="text-white cursor-pointer z-40" onClick={handlePrev}>
+          <MdOutlineArrowBackIos className="size-10 z-30" />
         </div>
         <div className="text-white cursor-pointer" onClick={handleNext}>
           <MdArrowForwardIos className="size-10" />

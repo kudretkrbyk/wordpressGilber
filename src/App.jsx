@@ -9,28 +9,37 @@ import Contact from "./Pages/Contact";
 import Education from "./Pages/Education";
 import Testimonials from "./Pages/Testimonials";
 
+import { Element } from "react-scroll";
+
 function App() {
   return (
-    <div className=" overflow-hidden ">
-      <Navbar></Navbar>
-
-      <LeftNav></LeftNav>
-
-      <Home></Home>
-
-      <About></About>
-
-      <Projects></Projects>
-
-      <Education></Education>
-
-      <Testimonials></Testimonials>
-
-      <Partners></Partners>
-
-      <Blog></Blog>
-
-      <Contact></Contact>
+    <div className="overflow-hidden">
+      <Navbar />
+      <LeftNav />
+      <Element name="home">
+        <Home />
+      </Element>
+      <Element name="about">
+        <About />
+      </Element>
+      <Element name="projects">
+        <Projects />
+      </Element>
+      <Element name="education">
+        <Education />
+      </Element>
+      <Element name="testimonials">
+        <Testimonials />
+      </Element>
+      <Element name="partners">
+        <Partners />
+      </Element>
+      <Element name="blog">
+        <Blog />
+      </Element>
+      <Element name="contact">
+        <Contact />
+      </Element>
     </div>
   );
 }
