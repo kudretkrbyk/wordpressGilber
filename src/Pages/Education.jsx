@@ -38,7 +38,7 @@ export default function Education() {
       </div>
       <div className="flex flex-col items-center justify-between w-full h-screen text-xl text-white p-20 gap-5">
         <div className="flex items-center justify-between w-full px-20">
-          <div>Education</div>
+          <div className="text-6xl px-10">Education</div>
           <div>
             <button className="bg-red-500 p-3 px-4">DOWNLOAD RESUME</button>
           </div>
