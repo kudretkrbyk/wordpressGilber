@@ -52,7 +52,7 @@ export default function Testimonials() {
   };
 
   return (
-    <div className="w-full h-screen relative flex items-center justify-center p-20">
+    <div className="w-full h-screen relative flex items-center justify-center p-20 overflow-hidden">
       <div
         ref={imageRef}
         className={`absolute bg-center bg-cover w-full h-screen bg-[url('http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/testimonials.jpg')] duration-[4000ms] ${scale} `}
