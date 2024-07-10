@@ -11,7 +11,7 @@ import Testimonials from "./Pages/Testimonials";
 
 function App() {
   return (
-    <div className=" overflow-hidden">
+    <div className=" overflow-hidden ">
       <Navbar></Navbar>
 
       <LeftNav></LeftNav>
