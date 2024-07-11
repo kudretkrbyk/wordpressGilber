@@ -40,7 +40,7 @@ export default function About() {
   return (
     <div className="flex items-center justify-around px-40 w-full h-screen bg-black ">
       <div className="flex flex-col items-center gap-4 justify-center border-l border-b border-t border-white w-3/12 h-4/6">
-        <div className="flex z-50 items-end justify-center text-white w-full">
+        <div className="flex z-40 items-end justify-center text-white w-full">
           <div className=" text-9xl ">9</div>
           <div className="text-8xl text-red-500">.</div>
         </div>
@@ -69,7 +69,7 @@ export default function About() {
             </div>
             <div className="w-full relative ">
               <div
-                className="absolute z-50  h-2 bg-red-500 rounded-full duration-[4000ms]"
+                className="absolute z-40  h-2 bg-red-500 rounded-full duration-[4000ms]"
                 style={{ width: `${webDesignWidthObserver}%` }}
               ></div>
               <div className=" absolute w-full h-2 bg-white rounded-full"></div>
@@ -85,7 +85,7 @@ export default function About() {
             </div>
             <div className="w-full relative ">
               <div
-                className="absolute z-50  h-2 bg-red-500 rounded-full duration-[4000ms]"
+                className="absolute z-40  h-2 bg-red-500 rounded-full duration-[4000ms]"
                 style={{ width: `${figmaWidthObserver}%` }}
               ></div>
               <div className=" absolute w-full h-2 bg-white rounded-full"></div>
@@ -101,7 +101,7 @@ export default function About() {
             </div>
             <div className="w-full relative ">
               <div
-                className="absolute z-50  h-2 bg-red-500 rounded-full duration-[4000ms]"
+                className="absolute z-40  h-2 bg-red-500 rounded-full duration-[4000ms]"
                 style={{ width: `${wordpressWidthObserver}%` }}
               ></div>
               <div className=" absolute w-full h-2 bg-white rounded-full"></div>

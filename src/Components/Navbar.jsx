@@ -58,7 +58,7 @@ export default function Navbar() {
           +7 (212) 674-25-10
         </div>
       </div>
-      <div className="z-50 mobile-navbar">
+      <div className="z-50 hidden mobile-navbar">
         <MobileNavbar></MobileNavbar>
       </div>
     </div>
