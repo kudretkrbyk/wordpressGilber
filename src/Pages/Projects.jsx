@@ -21,16 +21,19 @@ export default function Projects() {
   return (
     <div className="w-full h-screen relative overflow-hidden">
       <div className=" absolute flex items-center justify-between w-full h-screen p-36">
-        <div className="text-white cursor-pointer" onClick={handlePrev}>
+        <div className="text-white cursor-pointer z-40" onClick={handlePrev}>
           <MdOutlineArrowBackIos className="size-10" />
         </div>
-        <div className="text-white cursor-pointer" onClick={handleNext}>
+        <div className="text-white cursor-pointer z-40" onClick={handleNext}>
           <MdArrowForwardIos className="size-10" />
         </div>
       </div>
 
       {slides.map((slide, index) => (
-        <div className="w-full  relative" key={slide.id}>
+        <div
+          className="w-full flex items-start justify-start relative"
+          key={slide.id}
+        >
           {" "}
           <div
             className={`absolute bg-cover bg-center w-full h-screen transition-transform duration-[1500ms]  ${
@@ -41,13 +44,13 @@ export default function Projects() {
             style={{ backgroundImage: slide.backgroundImage }}
           ></div>{" "}
           <div
-            className={`absolute flex flex-col text-white gap-10 items-start justify-center h-screen p-60 w-2/3 transition-all duration-700 ease-in-out ${
+            className={`absolute border border-white flex flex-col text-white gap-10 items-start justify-center h-screen  w-2/3 transition-all duration-700 ease-in-out ${
               index === currentSlide
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"
             }`}
           >
-            <div className="text-8xl flex gap-1 font-bold">
+            <div className="text-8xl flex gap-1 font-bold border border-white">
               <span className="text-white">{slide.title}</span>
               <span className="text-red-500">.</span>
             </div>
