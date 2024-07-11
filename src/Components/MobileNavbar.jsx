@@ -1,17 +1,15 @@
 import { Link } from "react-scroll";
 import { RiCloseLargeFill } from "react-icons/ri";
-import { GiHamburgerMenu } from "react-icons/gi";
 
-export default function MobileNavbar() {
+export default function MobileNavbar({ handleMobileMenuControl }) {
   return (
     <div className="  w-full  h-screen items-center justify-center p-10 text-white fixed z-50 bg-[#161616] ">
-      <div>
-        <GiHamburgerMenu />
-      </div>
-
       <div className="flex flex-col items-center justify-center">
         <div className="z-50 flex items-center justify-end w-full">
-          <RiCloseLargeFill className="size-10" />
+          <RiCloseLargeFill
+            onClick={handleMobileMenuControl}
+            className="size-10"
+          />
         </div>
 
         <div className="z-50 flex items-center justify-center gap-16 w-full">
@@ -21,42 +19,62 @@ export default function MobileNavbar() {
               <div className="text-4xl text-red-700">.</div>
             </div>
             <div className="hover:text-red-500 duration-500 hover:cursor-pointer">
-              <Link to="home" smooth={true}>
+              <Link to="home" smooth={true} onClick={handleMobileMenuControl}>
                 HOME
               </Link>
             </div>
             <div className="hover:text-red-500 duration-500 hover:cursor-pointer">
-              <Link to="about" smooth={true}>
+              <Link to="about" smooth={true} onClick={handleMobileMenuControl}>
                 ABOUT
               </Link>
             </div>
             <div className="hover:text-red-500 duration-500 hover:cursor-pointer">
-              <Link to="projects" smooth={true}>
+              <Link
+                to="projects"
+                smooth={true}
+                onClick={handleMobileMenuControl}
+              >
                 PROJECTS
               </Link>
             </div>
             <div className="hover:text-red-500 duration-500 hover:cursor-pointer">
-              <Link to="education" smooth={true}>
+              <Link
+                to="education"
+                smooth={true}
+                onClick={handleMobileMenuControl}
+              >
                 EDUCATION
               </Link>
             </div>
             <div className="hover:text-red-500 duration-500 hover:cursor-pointer">
-              <Link to="testimonials" smooth={true}>
+              <Link
+                to="testimonials"
+                smooth={true}
+                onClick={handleMobileMenuControl}
+              >
                 TESTIMONIALS
               </Link>
             </div>
             <div className="hover:text-red-500 duration-500 hover:cursor-pointer">
-              <Link to="partners" smooth={true}>
+              <Link
+                to="partners"
+                smooth={true}
+                onClick={handleMobileMenuControl}
+              >
                 PARTNERS
               </Link>
             </div>
             <div className="hover:text-red-500 duration-500 hover:cursor-pointer">
-              <Link to="blog" smooth={true}>
+              <Link to="blog" smooth={true} onClick={handleMobileMenuControl}>
                 BLOG
               </Link>
             </div>
             <div className="hover:text-red-500 duration-500 bg-red-500 hover:cursor-pointer">
-              <Link to="contact" smooth={true}>
+              <Link
+                to="contact"
+                smooth={true}
+                onClick={handleMobileMenuControl}
+              >
                 CONTACT
               </Link>
             </div>
