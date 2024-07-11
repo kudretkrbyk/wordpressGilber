@@ -39,7 +39,7 @@ export default function Home() {
         ></div>
       </div>
 
-      <div className="z-40 flex flex-col text-white w-6/12 h-screen items-start justify-center border border-white p-48 gap-10">
+      <div className="z-40 flex flex-col text-white w-full md:w-8/12 xl:w-6/12 h-screen md:items-start items-center justify-center border border-white p-24 md:p-32 xl:p-48 gap-10">
         <div className="z-40 relative flex items-center justify-center w-1/4 h-16 group">
           <div className="absolute border p-10 rounded-full group-hover:scale-125 duration-500"></div>
           <div className="absolute">
