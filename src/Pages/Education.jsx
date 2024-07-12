@@ -27,31 +27,31 @@ export default function Education() {
   };
 
   return (
-    <div className="w-full h-screen relative flex items-center justify-center bg-[#161616] overflow-hidden">
-      <div className=" absolute flex items-center justify-between w-full h-screen p-36">
+    <div className="w-full h-[1100px] xl:h-screen relative flex items-stretch justify-center bg-[#161616] overflow-hidden p-5">
+      <div className=" absolute hidden md:flex items-center justify-between w-full h-full p-20 xl:p-36">
         <div className="text-white cursor-pointer z-40" onClick={handlePrev}>
-          <MdOutlineArrowBackIos className="size-10 z-30" />
+          <MdOutlineArrowBackIos className="size-10 z-40" />
         </div>
         <div className="text-white cursor-pointer" onClick={handleNext}>
           <MdArrowForwardIos className="size-10" />
         </div>
       </div>
-      <div className="flex flex-col items-center justify-between w-full h-screen text-xl text-white p-20 gap-5">
-        <div className="flex items-center justify-between w-full px-20">
+      <div className="flex flex-col  w-full   text-xl text-white xl:p-20   ">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10 w-full px-20">
           <div className="text-6xl px-10">Education</div>
           <div>
             <button className="bg-red-500 p-3 px-4">DOWNLOAD RESUME</button>
           </div>
         </div>
-        <div className="relative w-full h-full flex ">
+        <div className="relative w-full h-[1000px] flex flex-col md:flex-row  ">
           {sliderSlides.map((slide, index) => (
             <div
               key={slide.id}
               className={`absolute w-full h-full transition-transform duration-500  ${
-                index === currentSlide ? "translate-x-0" : "translate-x-full"
+                index === currentSlide ? "translate-x-0" : "translate-x-[-150%]"
               } ${
                 index === (currentSlide + slides.length - 1) % slides.length
-                  ? "translate-x-[-100%]"
+                  ? "translate-x-[-200%]"
                   : ""
               }`}
             >
