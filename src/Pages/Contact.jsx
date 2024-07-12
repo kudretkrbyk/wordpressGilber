@@ -1,19 +1,19 @@
 export default function Contact() {
   return (
-    <div className="w-full h-screen relative">
-      <div className="z-30 absolute bg-cover bg-center w-full h-screen bg-[url(http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/contact.jpg)]   "></div>
-      <div className="absolute z-40 flex items-center justify-center gap-20 w-full text-white p-32">
-        <div className="z-40 flex flex-col gap-5 items-start justify-center p-20 w-1/2">
+    <div className="w-full xl:h-screen h-[1000px] md:h-[850px]  relative">
+      <div className="z-30 absolute bg-cover bg-center w-full h-full bg-[url(http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/contact.jpg)]   "></div>
+      <div className="absolute z-40 flex flex-col xl:flex-row items-center justify-center gap-8 xl:gap-20 w-full h-full text-white p-10 md:p-40">
+        <div className="z-40 flex flex-col gap-5 items-start justify-around  w-full h-full  ">
           <div className="text-5xl">Contact</div>
-          <div className=" text-zinc-400 ">
+          <div className=" text-zinc-400 w-full ">
             You’ll called htmlFor yielding male, so lights Stars abundantly, is
             their.
           </div>
           <div className="text-4xl">27 Queen St, New York USA</div>
-          <div className="text-5xl">+7 (212) 674-25-10</div>
+          <div className="text-3xl">+7 (212) 674-25-10</div>
           <div className=" text-zinc-400 ">gilber.design@gmail.com</div>
         </div>
-        <div className=" w-1/2 text-white">
+        <div className=" w-full h-full text-white ">
           <form className="flex flex-col gap-5">
             <div className="flex gap-3">
               <p>
@@ -42,7 +42,7 @@ export default function Contact() {
             <label className="">
               <span className="border-b border-gray-500 focus-within:border-white  p-2 flex items-start justify-start">
                 <textarea
-                  className=" h-48  w-full    bg-transparent focus:outline-none p-2    "
+                  className="h-32 xl:h-48  w-full    bg-transparent focus:outline-none p-2    "
                   placeholder="Message "
                 ></textarea>
               </span>
