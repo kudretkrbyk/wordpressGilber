@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { MdArrowForwardIos } from "react-icons/md";
 import { MdOutlineArrowBackIos } from "react-icons/md";
+import { GoDotFill } from "react-icons/go";
 import slides from "../Constant/EducationSlides.jsx";
+
 import { useEffect } from "react";
 
 export default function Education() {
@@ -57,6 +59,17 @@ export default function Education() {
             >
               {slide.content}
             </div>
+          ))}
+        </div>
+        <div className="absolute bottom-0 left-0 p-5 flex md:hidden gap-2 z-40">
+          {slides.map((_, dotIndex) => (
+            <GoDotFill
+              key={dotIndex}
+              className={`cursor-pointer size-10 ${
+                dotIndex === currentSlide ? "text-red-500" : "text-white"
+              }`}
+              onClick={() => setCurrentSlide(dotIndex)}
+            />
           ))}
         </div>
       </div>
