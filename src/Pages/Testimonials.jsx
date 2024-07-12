@@ -76,7 +76,7 @@ export default function Testimonials() {
             business.
           </div>
         </div>
-        <div className="text-white flex flex-col gap-10 w-full xl:w-1/2 h-[600px] xl:h-[500px] relative overflow-hidden border border-red-500 ">
+        <div className="text-white flex flex-col gap-10 w-full xl:w-1/2 h-[600px] xl:h-[500px] relative overflow-hidden ">
           {sliderSlides.map((slide, index) => (
             <div
               key={slide.id}

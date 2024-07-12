@@ -38,7 +38,7 @@ export default function About() {
   }, []);
 
   return (
-    <div className="flex flex-col xl:flex-row items-center justify-around   w-full xl:h-screen h-full bg-black gap-14 p-20 ">
+    <div className="flex flex-col xl:flex-row items-center justify-around   w-full xl:h-screen h-full bg-[#161616] gap-14 p-20 ">
       <div className=" w-full h-[500px] flex items-center justify-start px-20   ">
         <div className="flex flex-col items-center gap-4 justify-center border-l border-b border-t border-white w-[340px] h-full">
           <div className="flex z-40 items-end justify-center text-white w-full">
