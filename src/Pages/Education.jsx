@@ -34,7 +34,7 @@ export default function Education() {
         <div className="text-white cursor-pointer z-40" onClick={handlePrev}>
           <MdOutlineArrowBackIos className="size-10 z-40" />
         </div>
-        <div className="text-white cursor-pointer" onClick={handleNext}>
+        <div className="text-white cursor-pointer z-40" onClick={handleNext}>
           <MdArrowForwardIos className="size-10" />
         </div>
       </div>
