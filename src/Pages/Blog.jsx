@@ -3,10 +3,10 @@ import AnimationBorder from "../Components/AnimationBorder";
 
 export default function Blog() {
   return (
-    <div className=" w-full h-screen flex items-center justify-center text-white bg-[#161616] ">
-      <div className=" flex flex-col gap-10 w-full p-48 h-screen items-start justify-center">
+    <div className=" w-full xl:h-screen flex items-center justify-center text-white bg-[#161616] ">
+      <div className=" flex flex-col gap-10 w-full p-5 md:p-32 xl:p-48  items-start justify-center">
         <div className="text-xl">Recent news</div>
-        <div className="flex w-full gap-10">
+        <div className="flex flex-col xl:flex-row w-full h-full gap-10">
           <div className="group w-full relative">
             <div className=" w-full">
               <AnimationBorder></AnimationBorder>
