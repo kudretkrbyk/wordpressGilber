@@ -38,10 +38,10 @@ export default function About() {
   }, []);
 
   return (
-    <div className="flex flex-col xl:flex-row items-center justify-around   w-full xl:h-screen h-full bg-[#161616] gap-14 p-5 md:p-20 ">
-      <div className=" w-full h-[500px] flex items-center xl:justify-start justify-center md:px-20   ">
-        <div className="flex flex-col items-center gap-4 justify-center border-l border-b border-t border-white w-[340px] h-full">
-          <div className="flex z-40 items-end justify-center text-white w-full">
+    <div className="flex flex-col md:flex-row items-center justify-around   w-full xl:h-screen h-full bg-[#161616] gap-10 xl:gap-14  p-10 md:p-20 ">
+      <div className=" w-full h-[500px] flex items-center xl:justify-start justify-center  xl:px-20   ">
+        <div className="flex flex-col items-center gap-4 justify-center border-l border-b border-t border-white  xl:w-[340px] h-full">
+          <div className="flex z-40 items-end justify-center text-white w-full ">
             <div className=" text-9xl ">9</div>
             <div className="text-8xl text-red-500">.</div>
           </div>
@@ -53,10 +53,12 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className=" flex p-5 xl:px-20    w-full  h-[500px]">
-        <div className="flex flex-col gap-10 items-start justify-center w-full h-full ">
-          <div className="text-white text-2xl font-bold">Great Experience</div>
-          <div className="text-white text-2xl">
+      <div className=" flex xl:p-5 xl:px-20    w-full  h-[500px] ">
+        <div className="flex flex-col gap-5 xl:gap-10 items-start justify-between  w-full h-full ">
+          <div className="text-white text-2xl font-bold w-full">
+            Great Experience
+          </div>
+          <div className="text-white text-2xl w-full">
             Fill appear won’t may make moveth signs. Fourth. Good own. Green
             you’re moveth us, lesser.
           </div>
