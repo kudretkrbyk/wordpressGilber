@@ -52,10 +52,10 @@ export default function Testimonials() {
   };
 
   return (
-    <div className="w-full h-screen relative flex items-center justify-center p-5 md:p-20 overflow-hidden">
+    <div className="w-full h-[800px] xl:h-screen relative flex items-center justify-center p-5 md:p-20  overflow-hidden border border-red-500">
       <div
         ref={imageRef}
-        className={`absolute bg-center bg-cover w-full h-screen bg-[url('http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/testimonials.jpg')] duration-[4000ms] ${scale} `}
+        className={`absolute bg-center bg-cover w-full h-full xl:h-screen bg-[url('http://paul-themes.com/wordpress/gilber/wp-content/uploads/2020/12/testimonials.jpg')] duration-[4000ms] ${scale} `}
       ></div>
       <div className="w-full h-[700px] flex flex-col xl:flex-row xl:items-end justify-between gap-1 xl:gap-32 xl:p-20 z-40">
         <div className="w-full xl:w-1/2 h-[500px] flex flex-col items-start justify-center xl:justify-between gap-10 ">
