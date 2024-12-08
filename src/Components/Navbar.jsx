@@ -27,7 +27,7 @@ export default function Navbar() {
               <div className="text-4xl">Gilber</div>
               <div className="text-4xl text-red-700">.</div>
             </div>
-            <div className="hidden xl:flex w-full">
+            <div className="hidden md:flex w-full">
               <div className="flex items-center justify-center md:gap-5 xl:gap-10 w-full">
                 <div className="hover:text-red-500 duration-500 hover:cursor-pointer">
                   <Link to="home" smooth={true}>
@@ -71,7 +71,7 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            <div className="flex  items-center justify-end xl:hidden w-full">
+            <div className="flex  items-center justify-end md:hidden w-full">
               <GiHamburgerMenu
                 onClick={handleMobileMenuControl}
                 className="text-white size-10"
