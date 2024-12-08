@@ -47,7 +47,7 @@ export default function Contact() {
                 ></textarea>
               </span>
             </label>
-            <button className="bg-red-600 text-white p-3 px-4 w-1/3">
+            <button className="bg-red-600 text-white p-3 px-4 xl:w-1/3">
               CONTACT ME
             </button>
           </form>
